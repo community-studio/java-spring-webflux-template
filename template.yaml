@@ -39,4 +39,4 @@ computedInputs:
   "pasta": "{{computed_inputs.pacote_base | replace('.','/')}}"             
 
 global-computed-inputs:
-  "pacote_base": "{{inputs.group_id | replace('-','')}}.{{inputs.artifact_id | replace('-','')}}"
+  "pacote_base": "{{computed_inputs.pacote_base}}"
