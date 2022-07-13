@@ -27,16 +27,14 @@ inputs:
     default: 0.0.1-SNAPSHOT
   - label: Nome do projeto
     type: text
-    name: nome_projeto
-    required: false       
+    name: project_name
+    required: false
+    default: project-name       
   - label: Descricao do projeto
     type: text
     name: descricao_projeto
     required: false 
 
-computed-inputs: 
-  pacote_base: "{{inputs.group_id | replace('-','')}}.{{inputs.artifact_id | replace('-','')}}"        
-  pasta: "{{computed_inputs.pacote_base | replace('.','/')}}"             
-
 global-computed-inputs:
   pacote_base: "{{inputs.group_id | replace('-','')}}.{{inputs.artifact_id | replace('-','')}}"
+  pasta: "{{global_computed_inputs.pacote_base | replace('.','/')}}"
