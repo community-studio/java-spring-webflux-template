@@ -1,4 +1,4 @@
-package {{computed_inputs.pacote_base}};
+package {{global_computed_inputs.pacote_base}};
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
